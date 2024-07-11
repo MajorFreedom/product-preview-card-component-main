@@ -1,0 +1,135 @@
+body {
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    background-color: #F3EBE4;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 100vh;
+}
+
+p, h1 {
+    margin: 0;
+}
+
+.product-card-preview-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 24em;
+    background-color: white;
+    border-radius: .8em;
+}
+
+
+.image-product {
+    width: 100%;
+    border-radius: .8em .8em 0 0;
+}
+
+.content-container {
+    padding: 1.4em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em ;
+}
+
+.product-name {
+    letter-spacing: .5em;
+    font-size: 0.8em;
+    font-weight: 500;
+    color: rgb(139, 139, 139);
+}
+
+h1 {
+    font-family: "Fraunces";
+    color: rgb(45, 45, 45);
+}
+
+
+.product-desc {
+    font-size: 1em;
+    font-weight: 500;
+    color: rgb(110, 110, 110);
+    letter-spacing: .01em;
+}
+
+.price-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+
+.discount-price {
+    
+    font-family: 'Fraunces';
+    font-size: 2em;
+    font-weight: 800;
+    color: #3d8168;
+}
+
+.original-price {
+    
+    font-size: .9em;
+    font-weight: 500;
+    color: rgb(110, 110, 110);
+    text-decoration: line-through;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    gap: .6em;
+    justify-content: center;
+    align-items: center;
+    background-color: #3d8168;
+    padding: 1em;
+    border-radius: .6em;
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+@media screen and (min-width: 48em) {
+
+
+    .product-card-preview-container {
+        flex-direction: row;
+        align-items: stretch;
+        width: 38em;
+    }
+
+    .image-product {
+        border-radius: .8em 0 0 .8em;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        
+    }
+    
+    .content-container, .text-container {
+        gap: 1.4em;
+    }
+
+    .content-container {
+        padding: 1.8em;
+        width: 100%;
+    }
+
+
+}
